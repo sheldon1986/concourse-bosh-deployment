@@ -1,0 +1,12 @@
+ bosh deploy -d concourse concourse.yml \
+      -l ../versions.yml \
+      -l vars.yml \
+      -o operations/basic-auth.yml \
+      -o operations/privileged-http.yml \
+      -o operations/privileged-https.yml \
+      -o operations/tls.yml \
+      -o aws-tls-vars.yml \
+      -o operations/web-network-extension.yml \
+      -o operations/add-credhub-uaa-to-web.yml \
+      -o operations/worker-ephemeral-disk.yml \
+      -o operations/scale.yml
